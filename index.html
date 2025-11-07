@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Student Grade Calculator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <h1>Student Grade Calculator</h1>
+    <div class="container1">
+        <form>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" placeholder="Enter your full name"><br>
+        </form>
+    </div>
+
+    <div class="container2">
+        <h3>Enter your grades</h3>
+        <form>
+            <label for="ScienceG">Science:</label>
+            <input type="number" id="ScienceG" placeholder="Enter Science grades"><br>
+
+            <label for="MathG">Math:</label>
+            <input type="number" id="MathG" placeholder="Enter Math grades"><br>
+
+            <label for="FilG">Filipino:</label>
+            <input type="number" id="FilG" placeholder="Enter Fil grades"><br>
+
+            <label for="EngG">English:</label>
+            <input type="number" id="EngG" placeholder="Enter Eng grades"><br>
+
+            <label for="SSG">SS:</label>
+            <input type="number" id="SSG" placeholder="Enter SS grades"><br>
+
+            <label for="PEG">PE:</label>
+            <input type="number" id="PEG" placeholder="Enter PE grades"><br>
+
+            <input type="button" py-click="getting_info" value="Calculate GWS">
+        </form>
+    </div>
+
+    <div class="buttonoutput">
+        <div id="#output">
+            <p id="studentsubjects"></p>
+            <h4 id="popup"></h4>
+        </div>
+    </div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>

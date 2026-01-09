@@ -49,8 +49,13 @@ def getting_info(e):
     {subject_list[5]}: {subject_values[5]:.2f}
 
     """
-
+    if GWA > 74: 
+        display(f'PASSED', target='result')
+    else: 
+        display(f'FAILED', target='result')
+        
     display(Subjects, target='studentsubjects')
     display(f'Your General Weighted Average is {GWA:.2f}',target='popup')
 
     
+
